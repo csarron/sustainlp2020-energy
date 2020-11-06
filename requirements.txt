@@ -1,0 +1,5 @@
+experiment_impact_tracker==0.1.9
+natsort==7.0.1
+parse==1.18.0
+pyserial==3.4
+transformers==3.0.2
