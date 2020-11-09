@@ -27,11 +27,19 @@ see [raw_sample_logs.zip](https://github.com/csarron/sustainlp2020-energy/releas
 ## Cite
 
 ```bib
-@article{cao2020towards,
-  title={Towards Accurate and Reliable Energy Measurement of NLP Models},
-  author={Cao, Qingqing and Balasubramanian, Aruna and Balasubramanian, Niranjan},
-  journal={arXiv preprint arXiv:2010.05248},
-  year={2020}
+@inproceedings{cao-etal-2020-towards,
+    title = "Towards Accurate and Reliable Energy Measurement of {NLP} Models",
+    author = "Cao, Qingqing  and
+      Balasubramanian, Aruna  and
+      Balasubramanian, Niranjan",
+    booktitle = "Proceedings of SustaiNLP: Workshop on Simple and Efficient Natural Language Processing",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.sustainlp-1.19",
+    pages = "141--148",
+    abstract = "Accurate and reliable measurement of energy consumption is critical for making well-informed design choices when choosing and training large scale NLP models. In this work, we show that existing software-based energy estimations are not accurate because they do not take into account hardware differences and how resource utilization affects energy consumption. We conduct energy measurement experiments with four different models for a question answering task. We quantify the error of existing software-based energy estimations by using a hardware power meter that provides highly accurate energy measurements. Our key takeaway is the need for a more accurate energy estimation model that takes into account hardware variabilities and the non-linear relationship between resource utilization and energy consumption. We release the code and data at https://github.com/csarron/sustainlp2020-energy.",
 }
 ```
 
