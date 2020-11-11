@@ -1,4 +1,4 @@
-experiment_impact_tracker==0.1.9
+experiment-impact-tracker==0.1.8
 natsort==7.0.1
 parse==1.18.0
 pyserial==3.4

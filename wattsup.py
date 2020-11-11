@@ -133,21 +133,17 @@ def main(args):
     if not args.port:
         system = uname()[0]
         if system == 'Darwin':  # Mac OS X
-            args.port = '/dev/tty.usbserial-A1000wT3'
+            args.port = '/dev/tty.usbserial-AD0202W0'
         elif system == 'Linux':
             args.port = '/dev/ttyUSB0'
     if not os.path.exists(args.port):
-        if not args.sim:
-            print('')
-            print('Serial port %s does not exist.' % args.port)
-            print('Please make sure FDTI drivers are installed')
-            print(' (http://www.ftdichip.com/Drivers/VCP.htm)')
-            print('Default ports are /dev/ttyUSB0 for Linux')
-            print(' and /dev/tty.usbserial-A1000wT3 for Mac OS X')
-            exit()
-        else:
-            print('')
-            print('File %s does not exist.' % args.port)
+        print('')
+        print('Serial port %s does not exist.' % args.port)
+        print('Please make sure FDTI drivers are installed')
+        print(' (http://www.ftdichip.com/Drivers/VCP.htm)')
+        print('Default ports are /dev/ttyUSB0 for Linux')
+        print(' and /dev/tty.usbserial-A1000wT3 for Mac OS X')
+        exit()
     meter = WattsUp(args)
     if args.log:
         meter.log(args.outfile)
